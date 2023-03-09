@@ -1,0 +1,105 @@
+%inter-800 {
+    font-family: 'Inter-ExtraBold', sans-serif;
+    font-weight: 800;
+}
+
+%inter-500 {
+    font-family: 'Inter-Medium', sans-serif;
+    font-weight: 500;
+}
+
+%inter-600 {
+    font-family: 'Inter-SemiBold', sans-serif;
+    font-weight: 600;
+}
+
+%monserrat-700 {
+    font-family: 'Monserrat-Bold', sans-serif;
+    font-weight: 700;
+}
+
+%monserrat-800 {
+    font-family: 'Monserrat-ExtraBold', sans-serif;
+    font-weight: 800;
+}
+
+%monserrat-300 {
+    font-family: 'Monserrat-Light', sans-serif;
+    font-weight: 300;
+}
+
+%monserrat-500 {
+    font-family: 'Monserrat-Medium', sans-serif;
+    font-weight: 500;
+}
+
+%monserrat-400 {
+    font-family: 'Monserrat-Regular', sans-serif;
+    font-weight: 400;
+}
+
+%monserrat-600 {
+    font-family: 'Monserrat-SemiBold', sans-serif;
+    font-weight: 600;
+}
+
+%btn {
+    font-size: 20px;
+    line-height: 80px;
+    padding: 0 30px;
+    color: #fff;
+    background: linear-gradient(276.41deg, #016CA8 -7%, #61B5E4 77.16%);
+    border-radius: 10px;
+    border-color: transparent;
+    cursor: pointer;
+    transition: all s;
+
+    &:hover {
+        background: #016CA8;
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+
+%slider {
+
+    .swiper-button-next:after,
+    .swiper-container-rtl .swiper-button-prev:after {
+        display: none;
+    }
+
+    .swiper-button-prev:after,
+    .swiper-container-rtl .swiper-button-next:after {
+        display: none;
+    }
+
+
+    .next {
+        top: 50%;
+        right: 0;
+        z-index: 10;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url("../img/experts/next.svg") no-repeat center;
+        width: 39px;
+        height: 39px;
+    }
+
+
+    .prev {
+        position: absolute;
+        border-radius: 50%;
+        top: 50%;
+        left: 0;
+        z-index: 10;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url("../img/experts/prev.svg") no-repeat center;
+        width: 39px;
+        height: 39px;
+    }
+
+}

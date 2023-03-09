@@ -1,0 +1,34 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    @extend %monserrat-400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    background: #F5F5F5;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1220px;
+    padding: 0 10px;
+}
+
+.alt-container {
+    margin: 0 auto;
+    max-width: 1390px;
+    padding: 0 10px;
+}
+
+.title {
+    @extend %monserrat-700;
+    font-size: 36px;
+    line-height: 80px;
+    color: #1178B2;
+}

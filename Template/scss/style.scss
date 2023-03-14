@@ -22,11 +22,12 @@
     &__list {
         display: flex;
         justify-content: space-between;
+        gap: 52px;
     }
 
-    &__item+&__item {
-        margin-left: 52px;
-    }
+    // &__item+&__item {
+    //     margin-left: 52px;
+    // }
 
     &__link {
         @extend %monserrat-500;
@@ -1256,6 +1257,12 @@
         font-size: 18px;
         line-height: 80px;
         color: #fff;
+        transition: all .3s;
+
+        &:hover {
+            color: #f2f7f9;
+            text-decoration: underline;
+        }
     }
 
     &__contact {

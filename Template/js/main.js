@@ -1,7 +1,5 @@
-const { Callbacks } = require("jquery");
 
 $(function () {
-
     Fancybox.bind("[data-fancybox]", {
     });
 
@@ -106,12 +104,6 @@ $(function () {
             nextEl: '.next',
             prevEl: '.prev',
         },
-    });
-
-
-
-    $('.select').on('click', function () {
-        $('.select').toggleClass('select--active');
     });
 });
 

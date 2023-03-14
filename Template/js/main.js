@@ -1,4 +1,7 @@
+const { Callbacks } = require("jquery");
+
 $(function () {
+
     Fancybox.bind("[data-fancybox]", {
     });
 
@@ -76,6 +79,7 @@ $(function () {
     });
 
 
+
     const swiper = new Swiper('.experts__topslider', {
         // Optional parameters
         direction: 'horizontal',
@@ -103,4 +107,11 @@ $(function () {
             prevEl: '.prev',
         },
     });
+
+
+
+    $('.select').on('click', function () {
+        $('.select').toggleClass('select--active');
+    });
 });
+

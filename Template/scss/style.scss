@@ -11,6 +11,12 @@
     background-image: url(../img/header-bg.jpg);
     padding-bottom: 300px;
     margin-bottom: 90px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__logo {
+        flex-shrink: 0;
+    }
 }
 
 .header-top {
@@ -42,6 +48,14 @@
         }
     }
 
+    &__btn-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+
+    }
+
     &__btn {
         padding: 14px 45px 20px;
         color: #fff;
@@ -57,6 +71,41 @@
             background: #8bd2c5;
         }
     }
+
+    .burger {
+        display: none;
+        width: 40px;
+        height: 40px;
+        position: relative;
+
+        &__open {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            top: 0;
+            left: 0;
+            opacity: 1;
+        }
+
+        &__close {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            top: 0;
+            left: 0;
+            opacity: 0;
+        }
+    }
+
+    .burger--active {
+        .burger__open {
+            opacity: 0;
+        }
+
+        .burger__close {
+            opacity: 1;
+        }
+    }
 }
 
 .header-content {
@@ -69,12 +118,17 @@
         line-height: 60px;
         text-transform: uppercase;
 
-        marker {
+        marker,
+        .marker-alt {
             display: table;
             background: #07AF91;
             border-radius: 3px;
             padding: 0 12px;
             margin-left: -12px;
+        }
+
+        .marker-alt {
+            display: none;
         }
     }
 
@@ -82,6 +136,23 @@
         font-size: 34px;
         line-height: 80px;
         margin-bottom: 34px;
+    }
+
+    &__text-alt {
+        display: none;
+        font-size: 18px;
+        line-height: 80px;
+        margin-bottom: 10px;
+        letter-spacing: 1.5px;
+
+
+        span {
+            color: #07AF91;
+            background: #fff;
+            border-radius: 3px;
+            padding: 5px 8px;
+            font-size: 20px;
+        }
     }
 
     &__btn {
@@ -184,10 +255,10 @@
             margin-bottom: 15px;
         }
 
-        .alt-subtitle {
-            text-align: left;
-            margin-left: 100px;
-        }
+        // .alt-subtitle {
+        //     text-align: left;
+        //     margin-left: 100px;
+        // }
 
         &__item-text {
             @extend %monserrat-300;
@@ -422,6 +493,9 @@
             }
 
         }
+        .btn-bottom{
+         display: none;
+        }
     }
 
     .about {
@@ -477,6 +551,9 @@
                 line-height: 60px;
                 color: #fff;
                 margin-bottom: 40px;
+                br{
+                 display: none;
+                }
             }
 
             &__link {
@@ -518,6 +595,12 @@
                 @extend %monserrat-500;
                 font-size: 20px;
                 color: #000;
+            }
+            &__mobile-text{
+              @extend %monserrat-500;
+                font-size: 20px;
+                color: #000;
+                display: none;
             }
 
             &__link-icon {

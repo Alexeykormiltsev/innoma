@@ -75,6 +75,11 @@ $(function () {
     $('#module-icon10').on('click', function () {
         $('#module-icon10').toggleClass('link-icon--active');
     });
+    $('.burger').on('click', function () {
+        $('.header-top__list').toggleClass('header-top__list--active');
+        $('.burger').toggleClass('burger--active');
+        $('body').toggleClass('hidden');
+    });
 
 
 

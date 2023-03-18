@@ -61,9 +61,15 @@
                             </li>
                         </ul>
                     </nav>
-                    <button class="header-top__btn">
-                        Войти
-                    </button>
+                    <div class="header-top__btn-box">
+                        <button class="header-top__btn">
+                            Войти
+                        </button>
+                        <div class="burger">
+                            <img class="burger__open" src="img/menu-icon.svg" alt="burger img">
+                            <img class="burger__close" src="img/menu-close.svg" alt="burger img">
+                        </div>
+                    </div>
                 </div>
                 <div class="header-content">
                     <h1 class="header-content__title">
@@ -72,10 +78,19 @@
                         <marker>
                             технологический IT-бизнес
                         </marker>
+                        <marker class="marker-alt">
+                            технологический бизнес
+                        </marker>
                         на международных рынках
                     </h1>
                     <p class="header-content__text">
                         Открыт набор заявок на акселератор
+                    </p>
+                    <p class="header-content__text-alt">
+                        Старт ближайшего акселератора
+                        <span>
+                            15.12.2022
+                        </span>
                     </p>
                     <button class="header-content__btn">
                         Подать заявку
@@ -161,8 +176,8 @@
                             <h3 class="aside__item-title">
                                 03
                             </h3>
-                            <h4 class="aside__item-subtitle alt-subtitle">
-                                I
+                            <h4 class="aside__item-subtitle">
+                                Корпорации
                             </h4>
                             <p class="aside__item-text">
                                 Для уже работающего <br> технологического бизнес, позволим найти новые международне
@@ -179,8 +194,14 @@
                 <div class="alt-container">
                     <div class="markets__top">
                         <h2 class="markets__top-title">
-                            Научитесь исследовать иностранные рынки <br>
-                            и откройте новые возможности для своего бизнеса
+                            <span class="wrap">
+                                <span class="inn">
+                                    Научитесь исследовать
+                                    иностранные рынки
+                                    <br>
+                                    и откройте новые возможности для своего бизнеса
+                                </span>
+                            </span>
                         </h2>
                         <p class="markets__top-text">
                             Наша команда поможет вам изучить рынки Ближнего Востока, Азии, Латинской Америки и Африки
@@ -225,13 +246,15 @@
                                 Израиль, Оман, Бахрейн, Катар, <br>
                                 Тунис, Йемен, Египет, Алжир
                             </p>
-                            <button class="info__btn">
-                                Выйти на рынок
-                            </button>
-                            <div class="info__manager">
-                                Фатима <span class="info__manager-post">
-                                    Менеджер по MENA
-                                </span>
+                            <div class="info__box">
+                                <button class="info__btn">
+                                    Выйти на рынок
+                                </button>
+                                <div class="info__manager">
+                                    Фатима <span class="info__manager-post">
+                                        Менеджер по MENA
+                                    </span>
+                                </div>
                             </div>
                         </div>
                         <div class="info__content-items">
@@ -269,6 +292,9 @@
                                 </p>
                             </a>
                         </div>
+                        <button class="info__btn btn-bottom">
+                            Выйти на рынок
+                        </button>
                     </div>
                 </div>
             </div>
@@ -303,7 +329,7 @@
                     </div>
                     <div class="about__video video">
                         <p class="video__text">
-                            Об акселерационной программе
+                            Об акселерационной <br> программе
                         </p>
                         <a data-fancybox class="video__link" href="https://www.youtube.com/watch?v=650H2AQHuuY"
                             class="video__link">
@@ -325,6 +351,9 @@
                                     <sran class="module__text">
                                         Тенденции и тренды современного мира
                                     </sran>
+                                    <span class="module__mobile-text">
+                                        4 недели
+                                    </span>
                                 </a>
                                 <a id="module-icon1" href="javascript:void(0);" class="module__link-icon">
                                     <img src="img/markets/arrow-icon.svg" alt="icon">
@@ -468,9 +497,9 @@
                                 <a id="module10" class="module__link" href="javascript:void(0);">
                                     Демо день
                                 </a>
-                                <a id="module-icon10" href="javascript:void(0);" class="module__link-icon">
+                                <!-- <a id="module-icon10" href="javascript:void(0);" class="module__link-icon">
                                     <img src="img/markets/arrow-icon.svg" alt="icon">
-                                </a>
+                                </a> -->
                             </div>
                         </li>
                     </ul>
@@ -479,7 +508,7 @@
                     </button>
                 </div>
             </div>
-            <div class="markets__partners partners">
+            <!-- <div class="markets__partners partners">
                 <div class="container">
                     <div class="partners__wrapper">
                         <div class="partners__content">
@@ -516,8 +545,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="markets__result result">
+            </div> -->
+            <!-- <div class="markets__result result">
                 <div class="container">
                     <h2 class="result__title title">
                         Что вы получите в результате?
@@ -592,8 +621,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="markets__price price">
+            </div> -->
+            <!-- <div class="markets__price price">
                 <div class="container">
                     <h2 class="price__title title">
                         Стоимость
@@ -766,9 +795,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
-        <section class="experts">
+        <!-- <section class="experts">
             <div class="container">
                 <h2 class="experts__title title">
                     Кто мы?
@@ -931,8 +960,8 @@
                     <div class="swiper-button-next next"></div>
                 </div>
             </div>
-        </section>
-        <section class="companions">
+        </section> -->
+        <!-- <section class="companions">
             <div class="container">
                 <h2 class="companions__title title">
                     Наши партнеры
@@ -978,8 +1007,8 @@
                     </button>
                 </div>
             </div>
-        </section>
-        <section class="events">
+        </section> -->
+        <!-- <section class="events">
             <div class="container">
                 <h2 class="events__title title">
                     Мероприятия и события
@@ -1035,8 +1064,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="questions">
+        </section> -->
+        <!-- <section class="questions">
             <div class="container">
                 <div class="questions__wrapper">
                     <div class="questions__content">
@@ -1100,8 +1129,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <footer class="footer">
+        </section> -->
+        <!-- <footer class="footer">
             <div class="container">
                 <div class="footer__wrapper">
                     <div class="footer__logo-box">
@@ -1144,7 +1173,7 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> -->
     </div>
     <script src="js/main.min.js"></script>
 </body>

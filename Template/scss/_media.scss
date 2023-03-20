@@ -47,14 +47,14 @@
             }
 
             &__content-item {
-                padding: 22px 30px;
+                padding: 20px 24px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
             }
 
             .download {
-                padding: 22px 30px;
+                padding: 20px 24px;
                 // max-width: 190px;
                 flex-direction: column;
                 justify-content: center;
@@ -80,6 +80,25 @@
 
             &__content-text {
                 font-size: 14px;
+            }
+        }
+
+        .partners {
+            padding: 116px 0;
+
+            &__wrapper {
+                flex-direction: column;
+                gap: 48px;
+                text-align: center;
+            }
+
+            &__title {
+                font-size: 32px;
+                margin-bottom: 30px;
+            }
+
+            &__logo {
+                margin-right: auto;
             }
         }
     }
@@ -303,6 +322,25 @@
                 display: none;
             }
         }
+
+        .result {
+            &__item {
+                padding: 45px 20px 55px;
+            }
+
+            &__item-title {
+                font-size: 64px;
+                line-height: 20px;
+                margin-bottom: 40px;
+            }
+            &__item-subtitle{
+             font-size: 14px;
+             line-height: 20px;
+            }
+            &__item-text{
+             font-size: 14px;
+            }
+        }
     }
 }
 
@@ -473,7 +511,7 @@
 
             &__content-items {
                 width: 100%;
-                grid-gap: 20px;
+                grid-gap: 16px;
             }
 
             &__descr-title {
@@ -593,14 +631,76 @@
                 }
             }
         }
-    }
 
+        .partners {
+            padding: 99px 0;
+
+            &__title {
+                font-size: 24px;
+                line-height: 40px;
+            }
+
+            &__text {
+                font-size: 14px;
+                line-height: 30px;
+            }
+
+            &__btn {
+                font-size: 16px;
+                width: 100%;
+            }
+
+            &__logo {
+                grid-gap: 10px;
+
+                &::after {
+                    width: 216px;
+                    height: 136px;
+                }
+
+            }
+
+            &__logo-img {
+                object-fit: contain;
+                width: 90px;
+                height: 50px;
+            }
+
+            &__item {
+                width: 120px;
+                height: 66px;
+            }
+        }
+        .result{
+         &__items{
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+         }
+         &__item{
+          padding: 40px 43px;
+         }
+         &__item-title{
+          font-size: 48px;
+         }
+        }
+    }
 }
 
 @media (max-width: 430px) {
     .header {
         &__logo {
             max-width: 100px;
+        }
+    }
+
+    .markets {
+        .partners {
+            &__logo {
+                &::after {
+                    right: -70px;
+                }
+            }
         }
     }
 

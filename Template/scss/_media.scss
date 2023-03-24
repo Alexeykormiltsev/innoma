@@ -434,6 +434,28 @@
         }
     }
 
+    .experts {
+        &__slider {
+            .next {
+                top: 100%;
+                right: 15%;
+                background: url(../img/Arrow2.png);
+                width: 154px;
+                background-repeat: no-repeat;
+                border-radius: 0;
+            }
+
+            .prev {
+                top: 100%;
+                left: 15%;
+                background: url(../img/Arrow1.png);
+                width: 154px;
+                background-repeat: no-repeat;
+                border-radius: 0;
+            }
+        }
+    }
+
     .companions {
         &__items {
             grid-template-columns: repeat(2, 1fr);
@@ -888,6 +910,17 @@
     }
 
     .experts {
+        &__slider {
+
+            
+            .prev {
+                width: 80px;
+            }
+            .next{
+             width: 80px;
+            }
+        }
+
         &__text {
             font-size: 14px;
         }
@@ -1034,6 +1067,10 @@
             font-size: 10px;
         }
     }
+
+    .modal-content {
+        width: 460px;
+    }
 }
 
 @media (max-width: 430px) {
@@ -1070,6 +1107,19 @@
                 padding: 0 10px;
             }
         }
+    }
 
+    .modal-content {
+        width: 320px;
+    }
+
+    .modal {
+        &__form-btn {
+            padding: 20px;
+        }
+
+        &__form-title {
+            font-size: 24px;
+        }
     }
 }

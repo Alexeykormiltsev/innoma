@@ -62,7 +62,7 @@
                         </ul>
                     </nav>
                     <div class="header-top__btn-box">
-                        <button class="header-top__btn">
+                        <button class=" myBtn header-top__btn" data-modal="myModal">
                             Войти
                         </button>
                         <div class="burger">
@@ -1180,6 +1180,32 @@
                 </div>
             </div>
         </footer>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" data-modal="myModal">
+                    X
+                </span>
+                <form id="modal-form" class="modal__form" action="#">
+                    <div class="modal__form-box">
+                        <h2 class="modal__form-title">
+                            Вход
+                        </h2>
+                        <label class="modal__form-label">
+                            <input class="modal__form-input" type="text" placeholder="Е-маил">
+                        </label>
+                        <label class="modal__form-label">
+                            <input class="modal__form-input" type="text" placeholder="Пароль">
+                        </label>
+                        <button class="modal__form-btn" type="submit">
+                            Войти
+                        </button>
+                        <a class="modal__form-link" href="#">
+                            Зарегистрироваться
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
     <script src="js/main.min.js"></script>
 </body>

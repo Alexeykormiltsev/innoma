@@ -910,14 +910,30 @@
     }
 
     .experts {
+        .master {
+            padding-bottom: 50px;
+
+            &__name {
+                font-size: 16px;
+                margin-bottom: 5px;
+            }
+
+            &__skills {
+                font-size: 12px;
+            }
+        }
+
         &__slider {
 
-            
             .prev {
-                width: 80px;
+                width: 100%;
+                background: url(../img/Arrow3.png) no-repeat;
             }
-            .next{
-             width: 80px;
+
+            .next {
+                width: 100%;
+                background: url(../img/Arrow4.png) no-repeat;
+                left: 70%;
             }
         }
 
